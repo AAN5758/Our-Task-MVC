@@ -2,11 +2,11 @@
 
 class Home extends Controller{
     public function index(){
-        $data['title'] = 'Data Tugas';
-        $data['tugas'] = $this->model('Tugas_solo_model')->getAllTugas();
+        $dataSolo['title'] = 'Data Tugas';
+        $dataSolo['tugas'] = $this->model('Tugas_solo_model')->getAllTugas();
         // var_dump($data);
         $this->view("templates/header");
-        $this->view("home/index",$data);
+        $this->view("home/index",$dataSolo);
         $this->view("templates/footer");
     }
     public function calender(){

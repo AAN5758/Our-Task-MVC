@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="item row-task" id="scroll-1">
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="item row-task" id="scroll-2">
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -271,7 +271,7 @@
                         </div>
                     </div>
                     <div class="item row-task" id="scroll-3">
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -293,7 +293,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -315,7 +315,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
@@ -337,7 +337,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list" onclick="window.location.href='Task-group'">
+                        <div class="list" onclick="window.location.href='group/detail'">
                             <div class="group gradient-1">
                                 <div class="group-inner-text">
                                     <div class="mapel2 poppins">PBO</div>
