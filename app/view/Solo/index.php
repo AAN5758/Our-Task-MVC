@@ -96,7 +96,10 @@
                         } ?>
                     </div>
                 </div>
-                <div>
+                <?php 
+                $display2 = 'block';
+                ?>
+                <div style="display:<?=$display2;?>;">
                     <div class="sort-by top">
                         <div class="title poppins">Deadline Dekat</div>
                         <div class="arrow">
