@@ -72,10 +72,42 @@
                 </div>
             </div>
             <div class="add-attachment hide" id="add">
-                <input type="text" id="attachment-note" style="height: 20px">
-                <input type="file" id="attachment-file">
+            <!-- <input type="text" id="attachment-note" style="height: 20px">
+                <input type="submit" nama="proses" value="Upload" id="attachment-submit">
                 <button style="outline: none; border:none; height: 30px" onclick="AttachmentInput()">Upload</button>
-            </div>
+             -->
+            <form action="upload" method="post" enctype="multipart/form-data">
+                <!-- <b>File Upload</b><input type="file" name="NamaFile" id="attachment-file"> -->
+                <input type="file" name="image" id="image">
+                <input type="submit" nama="proses" id="attachment-submit">
+                <!-- <button style="outline: none; border:none; height: 30px" onclick="AttachmentInput()">Upload</button> -->
+            
+            </form>
+                
+                 <?php 
+                // echo "File Upload";
+                // $koneksi = mysqli_connect("localhost", "root", "20112011", "dbourtask");
+                // if (isset($_POST['proses'])) {
+                //     $namaFile = $_FILES['NamaFile']['name'];
+                //     $tmpName = $_FILES['NamaFile']['tmp_name'];
+                //     $dir = "upload/";
+                //     $upload = move_uploaded_file($tmpName, $dir . $namaFile);
+                //     if ($upload) {
+                //         $sql = "INSERT INTO attachment VALUES ('','$namaFile')";
+                //         $query = mysqli_query($koneksi, $sql);
+                //         if ($query)  { 
+                //             echo "Berhasil";
+                //         } else {
+                //             echo "Gagal";
+                //         }
+                //     } else {
+                //         echo "Gagal";
+                //     }
+                // } else {
+                //     echo "Gagal";
+                // }             
+                ?>
+                </div>
         </div>
     </div>
 
@@ -177,6 +209,71 @@
 
             // Menambahkan elemen Attachments ke dalam elemen target
             document.getElementById('attachment').appendChild(attachmentDiv);
+
+            // Menambahkan fitur mengirim file ke databases
+            function AttachmentInput() {
+                var fileInput = document.getElementById('fileInput');
+                fileInput.click();
+
+                fileInput.onchange = function() {
+                    var file = fileInput.files[0];
+                    var attachmentNote = document.getElementById("attachment-note").value;
+                    var formattedTime;
+
+                    // Fungsi untuk menampilkan waktu
+                    function showTime() {
+                        var currentTime = new Date();
+                        var month = currentTime.toLocaleString('default', { month: 'long' });
+                        var day = currentTime.getDay();
+                        var hours = currentTime.getHours();
+                        var minutes = currentTime.getMinutes();
+                        var formattedMonth = month.substring(0, 3);
+                        var ampm = hours >= 12 ? 'PM' : 'AM';
+                        formattedTime = 'Added ' + formattedMonth + ' ' + day + ' at ' + padZero(hours) + ':' + padZero(minutes) + ' ' + ampm;
+                    }
+
+                    // Fungsi untuk menambahkan nol di depan angka satu digit
+                    function padZero(number) {
+                        return (number < 10) ? '0' + number : number;
+                    }
+
+                    showTime(); 
+                    AddAttachments();
+                    addAttachment(attachmentNote, 'url placeholder', formattedTime);
+
+                //     // Mengirim file ke server
+                //     var formData = new FormData();
+                //     formData.append('file', file);
+
+                //     var xhr = new XMLHttpRequest();
+                //     xhr.open('POST', '/upload', true);
+                //     xhr.onload = function () {
+                //         if (xhr.status === 200) {
+                //             console.log('File berhasil diunggah.');
+                //         } else {
+                //             console.log('Terjadi kesalahan saat mengunggah file.');
+                //         }
+                //     };
+                //     xhr.send(formData);
+                };
+                // const express = require('express');
+                // const multer  = require('multer');
+                // const app = express();
+                // const upload = multer({ dest: 'uploads/' }); // Direktori untuk menyimpan file
+
+                // // Endpoint untuk mengunggah file
+                // app.post('/upload', upload.single('file'), function (req, res, next) {
+                //     // Lakukan penyimpanan nama file ke database di sini
+                //     const fileName = req.file.filename;
+                //     res.status(200).send('File berhasil diunggah.');
+                // });
+
+                // app.listen(3000, function () {
+                // console.log('Server berjalan di port 3000');
+                // });
+
+            }
+
         }
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

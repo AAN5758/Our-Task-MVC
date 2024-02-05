@@ -352,7 +352,7 @@
                     </button>
                     <div class="navigation" style="display: flex; align-items: center; margin: 20px 0 30px 0;">
                         <a href="http://localhost/ourtaskmvc/public/setting/profile">
-                            <img src="http://localhost/ourtaskmvc/public/image/Profil.png" alt="" class="left-content">
+                            <img src="../public/image/Profil.png" alt="" class="left-content">
                         </a>
                         <div style="font: 400 13px Arial; display: flex; gap: 2px; flex-direction: column;">
                             <div>Akhtar</div>

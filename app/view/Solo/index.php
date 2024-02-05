@@ -58,7 +58,7 @@
                     </div>
                     <script>var hide = true;</script>
                     <div class="item row-task" id="scroll-1">
-                        <?php foreach ($data['tugas'] as $task) {
+                        <?php foreach ($dataSolo['tugas'] as $task) {
                             date_default_timezone_set('Asia/Jakarta');
                             $today = new DateTime(date('Y-m-d', time()));
                             $deadline = new DateTime(date('Y-m-d H:i:s', strtotime($task['tgl_deadline_solo'])));
@@ -75,7 +75,10 @@
                                         <div class="deadline work-sans">
                                             <div class="logo">
                                                 <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0.5V4.5M6 0.5V4.5M17.4826 9.5H0.517334M17.4826 9.5C17.2743 3.79277 15.154 2 9 2C2.84596 2 0.725603 3.79277 0.517334 9.5M17.4826 9.5C17.4943 9.82084 17.5 10.154 17.5 10.5C17.5 17 15.5 19 9 19C2.5 19 0.5 17 0.5 10.5C0.5 10.154 0.505626 9.82084 0.517334 9.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12 0.5V4.5M6 0.5V4.5M17.4826 9.5H0.517334M17.4826 9.5C17.2743 3.79277 15.154 2 9 
+                                                    2C2.84596 2 0.725603 3.79277 0.517334 9.5M17.4826 9.5C17.4943 9.82084 17.5 10.154 17.5 10.5C17.5 
+                                                    17 15.5 19 9 19C2.5 19 0.5 17 0.5 10.5C0.5 10.154 0.505626 9.82084 0.517334 9.5" 
+                                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </div>
                                             <?= $task['tgl_deadline_solo'] ?>
@@ -116,7 +119,7 @@
                         </div>
                     </div>
                     <div class="item row-task" id="scroll-2">
-                        <?php foreach ($data['tugas'] as $task) {
+                        <?php foreach ($dataSolo['tugas'] as $task) {
                             date_default_timezone_set('Asia/Jakarta');
                             $today = new DateTime(date('Y-m-d', time()));
                             $deadline = new DateTime(date('Y-m-d H:i:s', strtotime($task['tgl_deadline_solo'])));
@@ -163,7 +166,7 @@
                         </div>
                     </div>
                     <div class="item row-task" id="scroll-3">
-                        <?php foreach ($data['tugas'] as $task) {
+                        <?php foreach ($dataSolo['tugas'] as $task) {
                             date_default_timezone_set('Asia/Jakarta');
                             $today = new DateTime(date('Y-m-d', time()));
                             $dibuat = new DateTime(date('Y-m-d H:i:s', strtotime($task['tgl_dibuat_solo'])));

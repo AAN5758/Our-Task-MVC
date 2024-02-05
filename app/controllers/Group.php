@@ -1,4 +1,5 @@
 <?php
+
 class Group extends Controller{
     public function index(){
         $this->view("templates/header");
