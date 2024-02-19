@@ -25,7 +25,7 @@
     </div>
     <div class="container">
         <div class="login general-text-font">Login to your account</div>
-        <form action="http://localhost/ourtaskmvc/public/login/signin" method="post">
+        <form action="<?=BASEURL?>/login/signin" method="post">
             <div class="input-box">
                 <div class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
@@ -49,6 +49,7 @@
                 </div>
             </div>
             <a href="" class="general-text-font forgot-password">Forgot password?</a>
+            <div class="err-msg"><?php if(isset($_SESSION['login_err'])) echo $_SESSION['login_err']?></div>
             <button class="general-text-font login-btn" type="submit">
                 <!-- onclick="window.location.href='http://localhost/ourtaskmvc/public/home'" -->
                 Login</button>
